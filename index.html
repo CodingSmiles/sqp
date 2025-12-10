@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBSE X Math Paper Generator</title>
+    <title>Maths SQP Generator</title>
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -55,7 +55,7 @@ tailwind.config = {
         <h1 class="text-4xl font-extrabold tracking-tight" style="color: var(--terracotta);">
             CBSE Class 10 Math Paper Generator
         </h1>
-        <p class="mt-2 text-gray-600">Create mock tests, custom papers, and board-style exam sheets instantly.</p>
+        <p class="text-2xl mt-2 text-gray-1000">By Aadiraj Anil</p>
     </header>
 
     <!-- DASHBOARD CARD -->
@@ -70,17 +70,17 @@ tailwind.config = {
 
                 <label class="flex items-center cursor-pointer text-[var(--text-on-white)]">
                     <input type="checkbox" class="src-cb w-5 h-5 mr-3" value="ncert" checked>
-                    <span class="font-medium">NCERT Textbook</span>
+                    <span class="font-medium">NCERT</span>
                 </label>
 
                 <label class="flex items-center cursor-pointer text-[var(--text-on-white)]">
                     <input type="checkbox" class="src-cb w-5 h-5 mr-3" value="pyq" checked>
-                    <span class="font-medium">PYQ (Past Years)</span>
+                    <span class="font-medium">PYQs</span>
                 </label>
 
                 <label class="flex items-center cursor-pointer text-[var(--text-on-white)]">
-                    <input type="checkbox" class="src-cb w-5 h-5 mr-3" value="ssm" checked>
-                    <span class="font-medium">Support Material</span>
+                    <input type="checkbox" class="src-cb w-5 h-5 mr-3" value="other" checked>
+                    <span class="font-medium">Other Qns</span>
                 </label>
             </div>
         </div>
@@ -90,7 +90,7 @@ tailwind.config = {
             <button id="tab-mock" onclick="setMode('mock')"
                 class="px-6 py-3 font-bold border-b-2"
                 style="color:var(--terracotta); border-color:var(--terracotta);">
-                Board Mock (80 Marks)
+                Boards (80 Marks)
             </button>
 
             <button id="tab-custom" onclick="setMode('custom')"
@@ -101,7 +101,7 @@ tailwind.config = {
 
         <!-- MOCK MODE PANEL -->
         <div id="panel-mock" class="block">
-            <p class="text-gray-600 mb-4">Generates a complete CBSE Board Pattern paper covering the full syllabus.</p>
+            <p class="text-gray-600 mb-4">Complete CBSE Board format paper</p>
 
             <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 text-sm text-gray-600 mb-6">
                 <div>1 Mark: <strong>20 Q</strong></div>
@@ -114,7 +114,7 @@ tailwind.config = {
             <button onclick="handleGenerate()"
                 class="px-8 py-3 rounded-xl font-semibold shadow-lg transition"
                 style="background:var(--terracotta); color:var(--text-on-terracotta);">
-                Generate Full Paper
+                Generate Paper
             </button>
         </div>
 
@@ -126,30 +126,30 @@ tailwind.config = {
                 <label class="font-semibold">Total Marks:</label>
                 <input type="number" id="custom-marks" value="20" min="5" max="100"
                     class="w-24 p-2 border rounded-lg text-center">
-                <span class="text-gray-500 text-sm">Questions will be selected until this limit is reached.</span>
+                <span class="text-gray-500 text-sm">Number of Qns</span>
             </div>
 
             <!-- Marks filter -->
-            <h3 class="text-sm font-semibold uppercase mb-2" style="color:#5c5c5c;">Question Types</h3>
+            <h3 class="text-sm font-semibold uppercase mb-2" style="color:#5c5c5c;">Question Type</h3>
             <div class="flex flex-wrap gap-4 mb-6">
                 <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
                     <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="1" checked>1 Mark
                 </label>
 
                 <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
-                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="2" checked>2 Marks
+                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="2" checked>2 Mark
                 </label>
 
                 <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
-                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="3" checked>3 Marks
+                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="3" checked>3 Mark
                 </label>
 
                 <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
-                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="4" checked>4 Marks
+                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="4" checked>4 Mark
                 </label>
 
                 <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
-                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="5" checked>5 Marks
+                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="5" checked>5 Mark
                 </label>
             </div>
 
@@ -176,7 +176,7 @@ tailwind.config = {
         <!-- HISTORY -->
         <div class="mt-10 pt-8 border-t">
             <div class="flex justify-between items-center mb-3">
-                <h3 class="font-semibold">Generated History</h3>
+                <h3 class="font-semibold">History</h3>
                 <button onclick="clearHistory()" class="text-xs text-red-500 hover:underline">Clear History</button>
             </div>
 
@@ -198,70 +198,81 @@ tailwind.config = {
     </section>
 
     <!-- PAPER VIEW -->
-    <div id="paper-view"
-         class="hidden print-area max-w-[210mm] mx-auto bg-white p-12 shadow-2xl mt-10 min-h-screen rounded-xl text-[var(--text-on-white)]">
+<div id="paper-view"
+    class="hidden print-area max-w-[210mm] mx-auto bg-white p-10 md:p-12 shadow-xl mt-10 min-h-screen rounded-xl text-[var(--text-on-white)] leading-relaxed">
 
-        <!-- HEADER -->
-        <div class="text-center border-b-2 border-black pb-4 mb-6">
-            <input type="text" value="MOCK SCHOOL PRESENTS"
-                   class="text-3xl font-serif font-bold w-full text-center border-none bg-transparent" />
+    <!-- HEADER -->
+    <div class="text-center border-b-[3px] border-gray-800 pb-5 mb-8">
 
-            <input type="text" value="MOCK EXAMINATION"
-                   class="text-xl font-serif font-bold w-full text-center border-none bg-transparent" />
+        <!-- School / Title -->
+        <input type="text" value="Aadiraj SQPs"
+               class="text-3xl font-serif font-bold w-full text-center border-none bg-transparent tracking-wide" />
 
-            <div class="flex justify-between font-serif font-bold text-lg mt-6">
-                <span>Class: X</span>
-                <span>Subject: Mathematics</span>
-            </div>
+        <input type="text" value="Mock Test"
+               class="text-xl font-serif font-semibold w-full text-center border-none bg-transparent mt-1 tracking-wide" />
 
-            <div class="flex justify-between font-serif text-lg mt-1">
-                <span id="paper-time">Time: 3 Hours</span>
-                <span id="paper-marks">Max Marks: 80</span>
-            </div>
-
-            <div id="paper-meta" class="no-print mt-2 text-xs text-gray-500 font-mono"></div>
+        <!-- Meta Row -->
+        <div class="grid grid-cols-2 font-serif font-semibold text-lg mt-6">
+            <span class="text-left">Class: 10</span>
+            <span class="text-right">Subject: Mathematics</span>
         </div>
 
-        <!-- INSTRUCTIONS -->
-        <div class="mb-6 font-serif text-sm italic border-b border-gray-300 pb-4">
-            <p><strong>General Instructions:</strong></p>
-            <ul class="list-disc ml-6">
-                <li>This question paper contains 5 sections A, B, C, D and E.</li>
-                <li>Section A has 20 MCQs carrying 1 mark each.</li>
-                <li>Section B has 5 questions of 02 marks each.</li>
-                <li>Section C has 6 questions of 03 marks each.</li>
-                <li>Section D has 4 questions of 05 marks each.</li>
-                <li>Section E has 3 case-based units of 04 marks each.</li>
-            </ul>
+        <div class="grid grid-cols-2 font-serif text-lg mt-1">
+            <span id="paper-time" class="text-left">Time: 3 Hours</span>
+            <span id="paper-marks" class="text-right">Max Marks: 80</span>
         </div>
 
-        <div id="questions-container" class="font-serif text-justify"></div>
-
-        <div id="answer-key-container" class="hidden mt-12 pt-6 border-t-4 border-black break-before-page">
-            <h2 class="text-center text-xl font-bold underline mb-6">MARKING SCHEME / ANSWERS</h2>
-            <div id="answer-list"></div>
-        </div>
-
+        <div id="paper-meta"
+             class="no-print mt-3 text-[11px] text-gray-500 font-mono tracking-tight"></div>
     </div>
+
+    <!-- INSTRUCTIONS -->
+    <div class="mb-8 font-serif text-[15px] italic border border-gray-300 bg-gray-50 p-4 rounded-lg shadow-sm">
+        <p class="font-semibold mb-2 not-italic">General Instructions:</p>
+        <ul class="list-disc ml-6 space-y-1">
+            <li>This question paper contains 5 sections A, B, C, D and E.</li>
+            <li>Section A has 20 MCQs carrying 1 mark each.</li>
+            <li>Section B has 5 questions of 02 marks each.</li>
+            <li>Section C has 6 questions of 03 marks each.</li>
+            <li>Section D has 4 questions of 05 marks each.</li>
+            <li>Section E has 3 case-based questions of 04 marks each.</li>
+        </ul>
+    </div>
+
+    <!-- QUESTIONS -->
+    <div id="questions-container" class="font-serif text-justify text-[16px] space-y-6"></div>
+
+    <!-- ANSWERS -->
+    <div id="answer-key-container"
+         class="hidden mt-14 pt-8 border-t-[4px] border-black break-before-page">
+
+        <h2 class="text-center text-2xl font-bold underline mb-8 tracking-wide">
+            Marking Scheme & Answers
+        </h2>
+
+        <div id="answer-list" class="text-[15px] space-y-4 font-serif"></div>
+    </div>
+</div>
+
 
 </div>
 
 <!-- FLOATING CONTROLS -->
 <div id="controls" class="no-print hidden fixed bottom-6 right-6 flex flex-col gap-3">
     <button onclick="window.print()"
-        class="p-4 rounded-full shadow-xl hover:opacity-90 transition"
+        class="rounded-full shadow-xl hover:opacity-90 transition flex items-center justify-center text-xs"
         style="background:var(--terracotta); color:var(--text-on-terracotta);">
         Print
     </button>
 
     <button onclick="toggleAnswers()"
-        class="p-4 rounded-full shadow-xl hover:opacity-90 transition"
+        class="rounded-full shadow-xl hover:opacity-90 transition flex items-center justify-center text-xs"
         style="background:#1E7B32; color:white;">
         Answers
     </button>
 
     <button onclick="location.reload()"
-        class="p-4 rounded-full shadow-xl hover:opacity-90 transition"
+        class="rounded-full shadow-xl hover:opacity-90 transition flex items-center justify-center text-xs"
         style="background:#555; color:white;">
         Dashboard
     </button>

@@ -1,6 +1,3 @@
-// script.js
-// script.js
-
 let ALL_QUESTIONS_DATA = [];
 let CURRENT_MODE = 'mock';
 
@@ -30,9 +27,9 @@ async function loadAllData() {
 function renderChapterList() {
     const container = document.getElementById('chapter-list');
     container.innerHTML = CHAPTERS.map(ch => `
-        <label class="flex items-center space-x-2 cursor-pointer p-2 border rounded hover:bg-gray-50 transition select-none">
-            <input type="checkbox" class="chapter-cb w-4 h-4 text-indigo-600 rounded focus:ring-indigo-500" value="${ch.name}" checked>
-            <span class="text-sm text-gray-700">${ch.name}</span>
+        <label class="flex items-center gap-2 cursor-pointer p-2 border rounded-xl bg-white shadow-sm hover:bg-[var(--terracotta-light)] hover:border-[var(--terracotta)] transition">
+            <input type="checkbox" class="chapter-cb w-4 h-4 accent-[var(--terracotta)]" value="${ch.name}" checked>
+            <span class="text-sm text-[var(--text-on-white)]">${ch.name}</span>
         </label>
     `).join('');
 }
@@ -44,9 +41,10 @@ function toggleChapters(selectAll) {
 
 function setMode(mode) {
     CURRENT_MODE = mode;
-    const activeClass = "px-6 py-3 font-bold text-indigo-600 border-b-2 border-indigo-600 bg-indigo-50 transition-colors";
-    const inactiveClass = "px-6 py-3 text-gray-500 hover:text-indigo-600 transition-colors";
-
+    const activeClass =
+        "px-6 py-3 font-bold rounded-lg transition text-[var(--terracotta)] border-b-2 border-[var(--terracotta)] bg-[var(--terracotta-light)]";
+    const inactiveClass =
+        "px-6 py-3 font-semibold text-gray-500 hover:text-[var(--terracotta)] transition";
     document.getElementById('tab-mock').className = mode === 'mock' ? activeClass : inactiveClass;
     document.getElementById('tab-custom').className = mode === 'custom' ? activeClass : inactiveClass;
 
@@ -95,7 +93,7 @@ function handleGenerate() {
     }
 
     if (paper.length === 0) {
-        alert("No questions found! Try selecting 'NCERT + PYQ + SSM' or more chapters.");
+        alert("No questions found! Try selecting 'NCERT + PYQ + other' or more chapters.");
         return;
     }
 
@@ -163,7 +161,7 @@ function renderPaper(paperQuestions) {
             // MCQ Options
             if (q.type === 'mcq' || q.type === 'assertion_reason') {
                 content += `<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mt-3 ml-1 font-serif text-sm">`;
-                if(q.options) {
+                if (q.options) {
                     q.options.forEach((opt, index) => {
                         const label = String.fromCharCode(97 + index);
                         content += `<div class="flex gap-2">
@@ -193,7 +191,7 @@ function renderPaper(paperQuestions) {
             ansDiv.className = "mb-3 text-sm border-b border-gray-100 pb-2 break-inside-avoid";
             ansDiv.innerHTML = `
                 <div class="flex gap-2">
-                    <strong class="text-indigo-700 min-w-[25px]">${qNum}.</strong>
+                   <strong class="text-[var(--terracotta)] min-w-[25px]">${qNum}.</strong>
                     <div class="flex-1">
                         <div class="font-medium text-gray-900">${q.answer}</div>
                         ${q.explanation ? `<div class="text-gray-500 text-xs mt-1 italic">Hint: ${q.explanation}</div>` : ''}
@@ -216,7 +214,7 @@ function toggleAnswers() {
 }
 
 // 9. Load Paper from History (Restores a saved paper)
-window.loadPaperByIds = function(ids, criteria) {
+window.loadPaperByIds = function (ids, criteria) {
     // Find questions from ALL_QUESTIONS_DATA
     let paper = [];
     ALL_QUESTIONS_DATA.forEach(ch => {
@@ -235,7 +233,7 @@ window.loadPaperByIds = function(ids, criteria) {
     document.getElementById('paper-meta').innerText = criteria;
 }
 
-window.loadPaperFromHistory = function(id) {
+window.loadPaperFromHistory = function (id) {
     const history = getHistoryData(); // From storage.js
     const paperRecord = history.find(p => p.id === id);
 
@@ -263,7 +261,7 @@ window.loadPaperFromHistory = function(id) {
 };
 
 // 7. Toggle Star
-window.toggleStar = function(id) {
+window.toggleStar = function (id) {
     let history = getHistoryData();
     const paper = history.find(p => p.id === id);
 
@@ -278,8 +276,8 @@ window.toggleStar = function(id) {
 };
 
 // 8. Delete Paper
-window.deletePaper = function(id) {
-    if(!confirm("Are you sure you want to delete this paper?")) return;
+window.deletePaper = function (id) {
+    if (!confirm("Are you sure you want to delete this paper?")) return;
 
     let history = getHistoryData();
     history = history.filter(p => p.id !== id);
@@ -289,8 +287,8 @@ window.deletePaper = function(id) {
 };
 
 // 9. Clear History
-window.clearHistory = function() {
-    if(confirm("Delete all history? (Starred papers will be kept)")) {
+window.clearHistory = function () {
+    if (confirm("Delete all history? (Starred papers will be kept)")) {
         let history = getHistoryData();
         const saved = history.filter(p => p.starred);
 
@@ -332,7 +330,7 @@ function renderHistoryTable() {
                 <td class="p-2 text-xs font-mono text-gray-600 whitespace-nowrap">${fullDateTime}</td>
                 <td class="p-2 font-medium text-gray-700 text-xs truncate max-w-xs" title="${rec.criteria}">${rec.criteria}</td>
                 <td class="p-2 flex items-center gap-3">
-                    <button onclick="loadPaperFromHistory(${rec.id})" class="text-indigo-600 hover:text-indigo-800 font-bold text-xs  tracking-wider">View</button>
+                    <button onclick="loadPaperFromHistory(${rec.id})" class="text-[var(--terracotta)] hover:opacity-80 font-bold text-xs tracking-wider">View</button>
                     <button onclick="deletePaper(${rec.id})" class="text-red-400 hover:text-red-600" title="Delete">
 Delete
                     </button>

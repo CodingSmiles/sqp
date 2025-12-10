@@ -210,7 +210,15 @@ table tr:hover td {
     width: 52px;
     height: 52px;
     border-radius: 50%;
+    display: flex;               /* center text properly */
+    justify-content: center;
+    align-items: center;
+    padding: 0;                  /* IMPORTANT: remove padding */
+    text-align: center;
+    line-height: 1;              /* prevent vertical overflow */
+    font-size: 12px;             /* reduces overflow */
     transition: 0.2s ease;
+    overflow: hidden;            /* ensures nothing spills out */
 }
 
 #controls button:hover {
