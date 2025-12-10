@@ -2,12 +2,12 @@
   "chapter_name": "Triangles",
   "file_name": "ch6_triangles.json",
   "questions": [
-    
+
     {
       "id": "ch6_1m_01",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm", "pyq"],
+      "source": ["other", "pyq"],
       "text": "If in Δ ABC and Δ PQR, AB/QR = BC/PR = CA/PQ, then:",
       "options": ["Δ PQR ~ Δ CAB", "Δ PQR ~ Δ ABC", "Δ CBA ~ Δ PQR", "Δ BCA ~ Δ PQR"],
       "answer": "(a) Δ PQR ~ Δ CAB",
@@ -27,7 +27,7 @@
       "id": "ch6_1m_03",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "In ΔABC, DE || AB. If AB = a, DE = x, BE = b and EC = c, then x expressed in terms of a, b and c is:",
       "options": ["ac/b", "ac/(b+c)", "ab/c", "ab/(b+c)"],
       "answer": "(b) ac/(b+c)",
@@ -37,7 +37,7 @@
       "id": "ch6_1m_04",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The perimeters of two similar triangles are 25 cm and 15 cm respectively. If one side of the first triangle is 10 cm, the corresponding side of the second triangle is:",
       "options": ["4 cm", "5 cm", "6 cm", "10 cm"],
       "answer": "(c) 6 cm",
@@ -57,7 +57,7 @@
       "id": "ch6_1m_06",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "In a trapezium ABCD, AB || DC. Diagonals AC and BD intersect at O. If AO/BO = 1/2, then CO/DO is:",
       "options": ["1/2", "2", "1/4", "1"],
       "answer": "(a) 1/2",
@@ -77,7 +77,7 @@
       "id": "ch6_1m_08",
       "marks": 1,
       "type": "assertion_reason",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Assertion (A): If two angles of one triangle are respectively equal to two angles of another triangle, then the triangles are similar.\nReason (R): If two angles of one triangle are equal to two angles of another triangle, then the third angle is also equal.",
       "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
       "answer": "(a) Both A and R are true and R is correct explanation"
@@ -96,7 +96,7 @@
       "id": "ch6_1m_10",
       "marks": 1,
       "type": "assertion_reason",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Assertion (A): In triangle ABC, if D and E are points on AB and AC respectively such that DE || BC, then ΔADE ~ ΔABC.\nReason (R): A line parallel to one side of a triangle divides the other two sides proportionally.",
       "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
       "answer": "(b) Both A and R are true but R is not the direct explanation for similarity (R explains BPT)."
@@ -114,7 +114,7 @@
       "id": "ch6_2m_02",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "In the given figure, AB || DE and BD || EF. Prove that DC² = CF × AC.",
       "answer": "Using BPT twice."
     },
@@ -130,7 +130,7 @@
       "id": "ch6_2m_04",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "A street light bulb is fixed on a pole 6 m above the level of the street. If a woman of height 1.5 m casts a shadow of 3 m, find how far she is away from the base of the pole.",
       "answer": "9 m"
     },
@@ -163,7 +163,7 @@
       "id": "ch6_3m_02",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "In the figure, DE || OQ and DF || OR. Show that EF || QR.",
       "answer": "Proof using BPT."
     },
@@ -179,7 +179,7 @@
       "id": "ch6_3m_04",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "S and T are points on sides PR and QR of ΔPQR such that ∠P = ∠RTS. Show that ΔRPQ ~ ΔRTS.",
       "answer": "AA Similarity (Common angle R, given angle)."
     },
@@ -196,7 +196,7 @@
       "id": "ch6_4m_01",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Sharon and the Tree.\nSharon went to a park. From a point A where she stood, her father and the tip of a tree were in a straight line. She used similarity to find the height.\n(i) Which similarity criterion is used?\n(ii) Write the ratio of corresponding sides.\n(iii) If a 6 feet pole casts a 15 feet shadow, find the height of a tree casting a 60 feet shadow.",
       "answer": "(i) AA (ii) AB/AD = BC/DE (iii) 24 feet"
     },
@@ -204,7 +204,7 @@
       "id": "ch6_4m_02",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Interior Design.\nA triangular cabinet shelf is designed. The largest triangle is ABC and a shelf DE is parallel to BC.\n(i) Show that ΔADE ~ ΔABC.\n(ii) If AD = 10 cm, DB = 5 cm, BC = 18 cm, find DE.\n(iii) Find the ratio of areas of ΔADE and ΔABC.",
       "answer": "(i) Proof (ii) 12 cm (iii) 4:9"
     },
@@ -212,7 +212,7 @@
       "id": "ch6_4m_03",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Flagpole.\nA student wants to find the height of a flagpole. He uses a 1m stick. Stick shadow = 0.4m, Flagpole shadow = 2.8m.\n(i) What is the ratio of height to shadow?\n(ii) Find the height of the flagpole.",
       "answer": "(i) 1:0.4 (ii) 7 meters"
     },
@@ -221,7 +221,7 @@
       "id": "ch6_5m_01",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ncert", "ssm", "pyq"],
+      "source": ["ncert", "other", "pyq"],
       "text": "State and prove Basic Proportionality Theorem (Thales Theorem).",
       "answer": "Standard Theorem Proof."
     },
@@ -237,7 +237,7 @@
       "id": "ch6_5m_03",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "D is a point on the side BC of a triangle ABC such that ∠ADC = ∠BAC. Prove that CA² = CB × CD.",
       "answer": "Proof using AA similarity."
     },

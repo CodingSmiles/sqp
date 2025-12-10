@@ -2,12 +2,12 @@
   "chapter_name": "Surface Areas and Volumes",
   "file_name": "ch12_surface_areas_volumes.json",
   "questions": [
-    
+
     {
       "id": "ch12_1m_01",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm", "pyq"],
+      "source": ["other", "pyq"],
       "text": "If the radius of a cylinder is halved and height is doubled, then its curved surface area will:",
       "options": ["Increase by 1", "Be the same", "Be doubled", "Be tripled"],
       "answer": "(b) Be the same",
@@ -17,7 +17,7 @@
       "id": "ch12_1m_02",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The total surface area of a solid hemisphere of radius r is:",
       "options": ["2πr²", "3πr²", "4πr²", "πr²"],
       "answer": "(b) 3πr²",
@@ -37,7 +37,7 @@
       "id": "ch12_1m_04",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "If two solid hemispheres of same base radius r are joined together along their bases, then curved surface area of this new solid is:",
       "options": ["4πr²", "6πr²", "3πr²", "8πr²"],
       "answer": "(a) 4πr²",
@@ -57,7 +57,7 @@
       "id": "ch12_1m_06",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "If the radius of a sphere is doubled, then the ratio of the original and new surface areas is:",
       "options": ["1:2", "1:4", "2:1", "4:1"],
       "answer": "(b) 1:4",
@@ -67,7 +67,7 @@
       "id": "ch12_1m_07",
       "marks": 1,
       "type": "assertion_reason",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Assertion (A): Total Surface area of the top is the sum of the curved surface area of the hemisphere and the curved surface area of the cone.\nReason (R): Top is made by fixing the plane surfaces of the hemisphere and cone together.",
       "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
       "answer": "(a) Both A and R are true and R is correct explanation"
@@ -94,7 +94,7 @@
       "id": "ch12_2m_02",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The radius and height of a cylinder are in the ratio 2:3. If the volume is 1386 cm³, find the radius and height.",
       "answer": "r = 6.66 cm, h = 9.99 cm"
     },
@@ -118,7 +118,7 @@
       "id": "ch12_2m_05",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Two solid hemispheres of radius 3.5 cm are joined to make a structure. Find the surface area.",
       "answer": "231 cm²"
     },
@@ -143,7 +143,7 @@
       "id": "ch12_3m_02",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "A cylindrical water tank is 1.5 m in diameter and 2.1 m high. How many litres of water can it hold?",
       "answer": "3712.5 litres"
     },
@@ -167,7 +167,7 @@
       "id": "ch12_3m_05",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "A hemispherical bowl of radius 10.5 cm is filled with soup. The soup is to be poured into cylindrical glasses of 200 ml capacity. How many glasses can be filled?",
       "answer": "12 glasses"
     },
@@ -192,7 +192,7 @@
       "id": "ch12_4m_02",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Circus Tent.\nA circus tent is cylindrical up to a height of 8 m and conical above it. The diameter of the base is 28 m and the total height is 18.5 m.\n(i) Find slant height of cone.\n(ii) Find floor area.\n(iii) Find area of cloth used.",
       "answer": "(i) 17.5 m (ii) 616 m² (iii) 1474 m²"
     },
@@ -200,7 +200,7 @@
       "id": "ch12_4m_03",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Tetra-Pack Milk.\n500 mL milk is packed in a cuboidal container (15x8x5 cm). These are packed in cartons (30x32x15 cm).\n(i) Find volume of carton.\n(ii) Find surface area of milk packet.\n(iii) How many packets in a carton?",
       "answer": "(i) 14400 cm³ (ii) 470 cm² (iii) 24"
     },
@@ -217,7 +217,7 @@
       "id": "ch12_5m_01",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ncert", "ssm"],
+      "source": ["ncert", "other"],
       "text": "A container shaped like a right circular cylinder having diameter 12 cm and height 15 cm is full of ice cream. The ice cream is to be filled into cones of height 12 cm and diameter 6 cm, having a hemispherical shape on the top. Find the number of such cones which can be filled with ice cream.",
       "answer": "10"
     },
@@ -241,7 +241,7 @@
       "id": "ch12_5m_04",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "A rocket is in the form a right Circular Cylinder closed at the lower end and surmounted by a cone with same radius as that of cylinder. The diameter and height of the cylinder are 9 m and 15 m, respectively. If the slant height of the conical portion is 7.5 m, find the total surface area and volume of the rocket.",
       "answer": "TSA: 594 m², Vol: 1081.93 m³"
     },

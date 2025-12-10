@@ -2,7 +2,7 @@
   "chapter_name": "Introduction to Trigonometry",
   "file_name": "ch8_intro_to_trigonometry.json",
   "questions": [
-    
+
     {
       "id": "ch8_1m_01",
       "marks": 1,
@@ -27,7 +27,7 @@
       "id": "ch8_1m_03",
       "marks": 1,
       "type": "mcq",
-      "source": ["ncert", "ssm"],
+      "source": ["ncert", "other"],
       "text": "9 sec² A - 9 tan² A is equal to:",
       "options": ["1", "9", "8", "0"],
       "answer": "(b) 9",
@@ -47,7 +47,7 @@
       "id": "ch8_1m_05",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "If sin A = 1/2, then the value of cot A is:",
       "options": ["√3", "1/√3", "√3/2", "1"],
       "answer": "(a) √3",
@@ -67,7 +67,7 @@
       "id": "ch8_1m_07",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "If sin θ - cos θ = 0, then the value of (sin⁴ θ + cos⁴ θ) is:",
       "options": ["1", "3/4", "1/2", "1/4"],
       "answer": "(c) 1/2",
@@ -87,7 +87,7 @@
       "id": "ch8_1m_09",
       "marks": 1,
       "type": "assertion_reason",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Assertion (A): The value of sin θ increases as θ increases from 0° to 90°.\nReason (R): The value of cos θ increases as θ increases from 0° to 90°.",
       "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
       "answer": "(b) A is true but R is false",
@@ -106,7 +106,7 @@
       "id": "ch8_1m_11",
       "marks": 1,
       "type": "assertion_reason",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Assertion (A): In a right angled triangle, if tan A = 1, then 2 sin A cos A = 1.\nReason (R): sin A = cos A when A = 45°.",
       "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
       "answer": "(b) Both are true but R doesn't directly explain the formula sin 2A."
@@ -142,7 +142,7 @@
       "id": "ch8_2m_03",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "If tan(A + B) = √3 and tan(A - B) = 1/√3, 0° < A+B ≤ 90°, A > B, find A and B.",
       "answer": "A = 45°, B = 15°"
     },
@@ -158,7 +158,7 @@
       "id": "ch8_2m_05",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Find the value of (sin 30° + tan 45° - cosec 60°) / (sec 30° + cos 60° + cot 45°).",
       "answer": "(43 - 24√3) / 11"
     },
@@ -174,7 +174,7 @@
       "id": "ch8_2m_07",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Prove that: (1 - sin θ)/(1 + sin θ) = (sec θ - tan θ)².",
       "answer": "Proof required."
     },
@@ -199,7 +199,7 @@
       "id": "ch8_3m_02",
       "marks": 3,
       "type": "subjective",
-      "source": ["ncert", "ssm"],
+      "source": ["ncert", "other"],
       "text": "Prove that: (cosec A - sin A)(sec A - cos A) = 1 / (tan A + cot A).",
       "answer": "Proof required."
     },
@@ -215,7 +215,7 @@
       "id": "ch8_3m_04",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "If tan θ + sin θ = m and tan θ - sin θ = n, show that m² - n² = 4√mn.",
       "answer": "Proof required."
     },
@@ -239,7 +239,7 @@
       "id": "ch8_3m_07",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Prove that: (tan θ / (1 - cot θ)) + (cot θ / (1 - tan θ)) = 1 + sec θ cosec θ.",
       "answer": "Proof required."
     },
@@ -256,7 +256,7 @@
       "id": "ch8_5m_01",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Prove that: (sin A + cosec A)² + (cos A + sec A)² = 7 + tan² A + cot² A.",
       "answer": "Standard Proof."
     },

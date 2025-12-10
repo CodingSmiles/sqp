@@ -2,7 +2,7 @@
   "chapter_name": "Arithmetic Progressions",
   "file_name": "ch5_arithmetic_progressions.json",
   "questions": [
-    
+
     {
       "id": "ch5_1m_01",
       "marks": 1,
@@ -17,7 +17,7 @@
       "id": "ch5_1m_02",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The nth term of an A.P. is given by an = 3 + 4n. The common difference is:",
       "options": ["7", "3", "4", "1"],
       "answer": "(c) 4",
@@ -47,7 +47,7 @@
       "id": "ch5_1m_05",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "If p, q, r and s are in A.P. then r – q is:",
       "options": ["s - p", "s - q", "s - r", "none of these"],
       "answer": "(c) s - r",
@@ -57,7 +57,7 @@
       "id": "ch5_1m_06",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The sum of all two-digit odd numbers is:",
       "options": ["2575", "2475", "2524", "2425"],
       "answer": "(b) 2475",
@@ -77,7 +77,7 @@
       "id": "ch5_1m_08",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The number of multiples lie between n and n² which are divisible by n is:",
       "options": ["n + 1", "n", "n - 1", "n - 2"],
       "answer": "(d) n - 2",
@@ -107,7 +107,7 @@
       "id": "ch5_1m_11",
       "marks": 1,
       "type": "assertion_reason",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Assertion (A): Let the positive numbers a, b, c be in A.P., then 1/bc, 1/ac, 1/ab are also in A.P.\nReason (R): If each term of an A.P. is divided by abc, then the resulting sequence is also in A.P.",
       "options": ["Both A and R are true and R is correct explanation", "Both true but R is not explanation", "A true R false", "A false R true"],
       "answer": "(a) Both A and R are true and R is correct explanation"
@@ -125,7 +125,7 @@
       "id": "ch5_1m_13",
       "marks": 1,
       "type": "assertion_reason",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Assertion (A): If the nth term of an AP is 2n² - 1, then the sum of the first n terms is n³.\nReason (R): The nth term of an AP is linear in n (an = An + B).",
       "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
       "answer": "(d) A is false but R is true",
@@ -144,7 +144,7 @@
       "id": "ch5_2m_02",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Find the common difference of the AP 1/p, (1-p)/p, (1-2p)/p, ...",
       "answer": "-1"
     },
@@ -160,7 +160,7 @@
       "id": "ch5_2m_04",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Find the 9th term from the end (towards the first term) of the A.P. 5, 9, 13, ..., 185.",
       "answer": "153"
     },
@@ -184,7 +184,7 @@
       "id": "ch5_2m_07",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Find how many two-digit numbers are divisible by 6.",
       "answer": "15"
     },
@@ -217,7 +217,7 @@
       "id": "ch5_3m_03",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The angles of a triangle are in A.P., the least being half the greatest. Find the angles.",
       "answer": "40°, 60°, 80°"
     },
@@ -225,7 +225,7 @@
       "id": "ch5_3m_04",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The 4th term of an A.P. is zero. Prove that the 25th term of the A.P. is three times its 11th term.",
       "answer": "Proof: a = -3d. a25 = -3d + 24d = 21d. a11 = -3d + 10d = 7d. 21d = 3(7d)."
     },
@@ -249,7 +249,7 @@
       "id": "ch5_3m_07",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Which term of the A.P. 3, 14, 25, 36, ... will be 99 more than its 25th term?",
       "answer": "34th term"
     },
@@ -266,7 +266,7 @@
       "id": "ch5_4m_01",
       "marks": 4,
       "type": "case_study",
-      "source": ["ncert", "ssm"],
+      "source": ["ncert", "other"],
       "text": "Case Study: Potato Race.\nIn a potato race, a bucket is placed at the starting point, which is 5 m from the first potato, and the other potatoes are placed 3 m apart in a straight line. There are ten potatoes in the line.\n(i) Find the distance covered to pick up the 1st potato and return.\n(ii) Find the distance covered for the 2nd potato.\n(iii) Calculate the total distance the competitor has to run.",
       "answer": "(i) 10m (ii) 16m (iii) 370m"
     },
@@ -274,7 +274,7 @@
       "id": "ch5_4m_02",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: TV Production.\nIndia is a competitive manufacturing location. The production of TV sets in a factory increases uniformly by a fixed number every year. It produced 16000 sets in 6th year and 22600 in 9th year.\n(i) Find the production during the first year.\n(ii) Find the production during the 8th year.\n(iii) Find the total production during the first 3 years.",
       "answer": "(i) 5000 (ii) 20400 (iii) 21600"
     },
@@ -282,7 +282,7 @@
       "id": "ch5_4m_03",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Pocket Money.\nAnuj gets pocket money from his father everyday. Out of the pocket money, he saves Rs 2.75 on first day, Rs 3 on second day, Rs 3.25 on third day and so on.\n(i) What is the amount saved by Anuj on 14th day?\n(ii) What is the total amount saved by Anuj in 8 days?\n(iii) What is the amount saved by Anuj on 30th day?",
       "answer": "(i) Rs 6 (ii) Rs 29 (iii) Rs 10"
     },
@@ -307,7 +307,7 @@
       "id": "ch5_5m_01",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm", "pyq"],
+      "source": ["other", "pyq"],
       "text": "A contract on construction job specifies a penalty for delay of completion beyond a certain date as follows: Rs. 200 for the first day, Rs. 250 for the second day, Rs. 300 for the third day, etc. The penalty for each succeeding day being Rs. 50 more than for the preceding day. How much money the contractor has to pay as penalty, if he has delayed the work by 30 days?",
       "answer": "Rs 27,750"
     },
@@ -315,7 +315,7 @@
       "id": "ch5_5m_02",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm", "pyq"],
+      "source": ["other", "pyq"],
       "text": "A sum of Rs 700 is to be used to give seven cash prizes to students of a school for their overall academic performance. If each prize is Rs 20 less than its preceding prize, find the value of each of the prizes.",
       "answer": "160, 140, 120, 100, 80, 60, 40"
     },
@@ -331,7 +331,7 @@
       "id": "ch5_5m_04",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ncert", "ssm"],
+      "source": ["ncert", "other"],
       "text": "200 logs are stacked in the following manner: 20 logs in the bottom row, 19 in the next row, 18 in the row next to it and so on. In how many rows are the 200 logs placed and how many logs are in the top row?",
       "answer": "16 rows, 5 logs in top row"
     },
@@ -339,7 +339,7 @@
       "id": "ch5_5m_05",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "An A.P. contains 37 terms. The sum of the three middle most terms is 225 and the sum of the last three is 429. Find out the A.P.",
       "answer": "3, 7, 11, ..."
     }

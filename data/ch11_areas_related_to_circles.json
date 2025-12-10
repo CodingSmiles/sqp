@@ -2,12 +2,12 @@
   "chapter_name": "Areas Related to Circles",
   "file_name": "ch11_areas_related_to_circles.json",
   "questions": [
-    
+
     {
       "id": "ch11_1m_01",
       "marks": 1,
       "type": "mcq",
-      "source": ["ncert", "ssm"],
+      "source": ["ncert", "other"],
       "text": "Area of a sector of angle p (in degrees) of a circle with radius R is:",
       "options": ["p/180 × 2πR", "p/180 × πR²", "p/360 × 2πR", "p/720 × 2πR²"],
       "answer": "(d) p/720 × 2πR²",
@@ -27,7 +27,7 @@
       "id": "ch11_1m_03",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The length of the minute hand of a clock is 14 cm. The area swept by the minute hand in 5 minutes is:",
       "options": ["154 cm²", "154/3 cm²", "51.3 cm²", "205.2 cm²"],
       "answer": "(c) 51.3 cm²",
@@ -47,7 +47,7 @@
       "id": "ch11_1m_05",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "If the circumference of a circle is doubled, then its area becomes:",
       "options": ["Doubled", "Halved", "Quadrupled", "Unchanged"],
       "answer": "(c) Quadrupled",
@@ -57,7 +57,7 @@
       "id": "ch11_1m_06",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The perimeter of a sector of a circle of radius 3.5 cm and sector angle 60° is:",
       "options": ["11 cm", "22 cm", "14.5 cm", "7 cm"],
       "answer": "(a) 11 cm (approx)",
@@ -77,7 +77,7 @@
       "id": "ch11_1m_08",
       "marks": 1,
       "type": "assertion_reason",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Assertion (A): If the sector angle is 180°, then the area of sector is 1/2 πr².\nReason (R): If the sector angle is 180°, then the sector becomes a semicircle.",
       "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
       "answer": "(a) Both A and R are true and R is correct explanation"
@@ -112,7 +112,7 @@
       "id": "ch11_2m_03",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Find the area of a quadrant of a circle whose circumference is 44 cm.",
       "answer": "38.5 cm²"
     },
@@ -128,7 +128,7 @@
       "id": "ch11_2m_05",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "A sector of 56° cut out from a circle, contains area of 17.6 cm². Find the radius of the circle.",
       "answer": "6 cm"
     },
@@ -153,7 +153,7 @@
       "id": "ch11_3m_02",
       "marks": 3,
       "type": "subjective",
-      "source": ["ncert", "ssm"],
+      "source": ["ncert", "other"],
       "text": "A horse is tied to a peg at one corner of a square shaped grass field of side 15 m by means of a 5 m long rope. Find the area of that part of the field in which the horse can graze.",
       "answer": "19.625 m²"
     },
@@ -177,7 +177,7 @@
       "id": "ch11_3m_05",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The perimeter of a sector of a circle of radius 5.7m is 27.2m. Calculate the area of the sector.",
       "answer": "45.03 m²"
     },
@@ -194,7 +194,7 @@
       "id": "ch11_4m_01",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Horse Grazing.\nA stable owner ties 4 horses at each corner of a square field of side 20m with 7m ropes.\n(i) Find area of square field.\n(ii) Find total grazed area.\n(iii) Find area left ungrazed.",
       "answer": "(i) 400 m² (ii) 154 m² (iii) 246 m²"
     },
@@ -210,7 +210,7 @@
       "id": "ch11_4m_03",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Tunnel.\nA highway tunnel has a cross section of a sector of a circle. Radius is 5√2 m and central angle is 90°.\n(i) Find the width of the tunnel.\n(ii) Find the height.\n(iii) Find the area of the sector.",
       "answer": "(i) 10 m (ii) 5√2 m (iii) 39.25 m²"
     },
@@ -218,7 +218,7 @@
       "id": "ch11_4m_04",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Trophy Shield.\nA trophy is made of a glass sector DOC supported by wooden triangles. AO=7cm.\n(i) Find angle DOC.\n(ii) Find area of wooden triangles.\n(iii) Find area of glass portion.",
       "answer": "(i) 60° (ii) 84.77 cm² (iii) 102.67 cm²"
     },
@@ -235,7 +235,7 @@
       "id": "ch11_5m_01",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "In the figure, a ΔABC is drawn to circumscribe a circle of radius 3 cm, such that the segments BD and DC are respectively of lengths 6 cm and 9 cm. If the area of ΔABC is 54 cm², then find the lengths of sides AB and AC.",
       "answer": "AB = 9 cm, AC = 12 cm"
     },
@@ -243,7 +243,7 @@
       "id": "ch11_5m_02",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "A farmer has a field in the shape of a trapezium ABCD with AB||DC, AB = 18 cm, DC = 32 cm and distance between AB and DC is 14 cm. Arcs of equal radii 7 cm with centres A, B, C and D have been drawn. Find the area of the field excluding the sectors.",
       "answer": "196 cm²"
     }

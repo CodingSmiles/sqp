@@ -2,12 +2,12 @@
   "chapter_name": "Pair of Linear Equations in Two Variables",
   "file_name": "ch3_linear_equations.json",
   "questions": [
-    
+
     {
       "id": "ch3_1m_01",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm", "pyq"],
+      "source": ["other", "pyq"],
       "text": "The solution of the equations x - y = 2 and x + y = 4 is:",
       "options": ["3 and 1", "4 and 3", "5 and 1", "-1 and -3"],
       "answer": "(a) 3 and 1",
@@ -17,7 +17,7 @@
       "id": "ch3_1m_02",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm", "pyq"],
+      "source": ["other", "pyq"],
       "text": "If the lines 3x + 2ky - 2 = 0 and 2x + 5y + 1 = 0 are parallel, then the value of k is:",
       "options": ["4/15", "15/4", "4/5", "5/4"],
       "answer": "(b) 15/4",
@@ -27,7 +27,7 @@
       "id": "ch3_1m_03",
       "marks": 1,
       "type": "mcq",
-      "source": ["ncert", "ssm"],
+      "source": ["ncert", "other"],
       "text": "The pair of equations x + 2y - 5 = 0 and -3x - 6y + 15 = 0 have:",
       "options": ["A unique solution", "Exactly two solutions", "Infinitely many solutions", "No solution"],
       "answer": "(c) Infinitely many solutions",
@@ -47,7 +47,7 @@
       "id": "ch3_1m_05",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The pair of equations y = 0 and y = -7 has:",
       "options": ["One solution", "Two solutions", "Infinitely many solutions", "No solution"],
       "answer": "(d) No solution",
@@ -57,7 +57,7 @@
       "id": "ch3_1m_06",
       "marks": 1,
       "type": "mcq",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "For what value of k, do the equations 3x - y + 8 = 0 and 6x - ky = -16 represent coincident lines?",
       "options": ["1/2", "-1/2", "2", "-2"],
       "answer": "(c) 2",
@@ -87,7 +87,7 @@
       "id": "ch3_1m_09",
       "marks": 1,
       "type": "assertion_reason",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Assertion (A): The pair of equations x + y = 5 and 2x + 2y = 10 has infinitely many solutions.\nReason (R): If the graph of two linear equations consists of coincident lines, then the system has infinitely many solutions.",
       "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
       "answer": "(a) Both A and R are true and R is correct explanation"
@@ -115,7 +115,7 @@
       "id": "ch3_2m_02",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Find whether the lines representing the following pair of linear equations intersect at a point, are parallel or coincident: 5x - 4y + 8 = 0 and 7x + 6y - 9 = 0.",
       "answer": "Intersecting lines"
     },
@@ -139,7 +139,7 @@
       "id": "ch3_2m_05",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Solve for x and y: 3x - y = 3 and 9x - 3y = 9.",
       "answer": "Infinitely many solutions"
     },
@@ -147,7 +147,7 @@
       "id": "ch3_2m_06",
       "marks": 2,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Solve for x and y: 0.2x + 0.3y = 1.3 and 0.4x + 0.5y = 2.3.",
       "answer": "x = 2, y = 3"
     },
@@ -180,7 +180,7 @@
       "id": "ch3_3m_03",
       "marks": 3,
       "type": "subjective",
-      "source": ["pyq", "ssm"],
+      "source": ["pyq", "other"],
       "text": "Five years hence, the age of Jacob will be three times that of his son. Five years ago, Jacob's age was seven times that of his son. What are their present ages?",
       "answer": "Jacob: 40, Son: 10"
     },
@@ -188,7 +188,7 @@
       "id": "ch3_3m_04",
       "marks": 3,
       "type": "subjective",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Solve for x and y: 49x + 51y = 499 and 51x + 49y = 501.",
       "answer": "x = 11/2, y = 9/2"
     },
@@ -213,7 +213,7 @@
       "id": "ch3_4m_01",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Ticket Booking.\nFrom Bangalore bus stand, 2 tickets to Malleshwaram and 3 to Yeshwanthpur cost ₹46; 3 to Malleshwaram and 5 to Yeshwanthpur cost ₹74.\n(i) Form a pair of linear equations.\n(ii) Find the fare to each place.\n(iii) What is the cost of 4 tickets to Malleshwaram?",
       "answer": "(i) 2x+3y=46, 3x+5y=74 (ii) Malleshwaram ₹8, Yeshwanthpur ₹10 (iii) ₹32"
     },
@@ -221,7 +221,7 @@
       "id": "ch3_4m_02",
       "marks": 4,
       "type": "case_study",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Case Study: Lunch Party.\nMr. Manoj arranged a lunch party. Expenses are partly fixed and partly proportional to the number of guests. For 7 guests cost is ₹650. For 11 guests cost is ₹970.\n(i) Form the equations.\n(ii) Find the fixed and variable cost.\n(iii) What is the cost for 15 guests?",
       "answer": "(i) x+7y=650, x+11y=970 (ii) Fixed: ₹90, Variable: ₹80 (iii) ₹1290"
     },
@@ -230,7 +230,7 @@
       "id": "ch3_5m_01",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ncert", "pyq", "ssm"],
+      "source": ["ncert", "pyq", "other"],
       "text": "A boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours, it can go 40 km upstream and 55 km downstream. Determine the speed of the stream and that of the boat in still water.",
       "answer": "Boat: 8 km/h, Stream: 3 km/h"
     },
@@ -246,7 +246,7 @@
       "id": "ch3_5m_03",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ncert", "ssm"],
+      "source": ["ncert", "other"],
       "text": "Roohi travels 300 km to her home partly by train and partly by bus. She takes 4 hours if she travels 60 km by train and the remaining by bus. If she travels 100 km by train and the remaining by bus, she takes 10 minutes longer. Find the speed of the train and the bus separately.",
       "answer": "Train: 60 km/h, Bus: 80 km/h"
     },
@@ -262,7 +262,7 @@
       "id": "ch3_5m_05",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "The sum of the digits of a two-digit number is 9. Also, nine times this number is twice the number obtained by reversing the order of the digits. Find the number.",
       "answer": "18"
     },
@@ -270,7 +270,7 @@
       "id": "ch3_5m_06",
       "marks": 5,
       "type": "long_answer",
-      "source": ["ssm"],
+      "source": ["other"],
       "text": "Points A and B are 90 km apart from each other on a highway. A car starts from A and another from B at the same time. If they go in the same direction they meet in 9 hours and if they go in opposite directions they meet in 9/7 hours. Find their speeds.",
       "answer": "40 km/h, 30 km/h"
     }
