@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE X Math Paper Generator</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        indigo: {
+          50:  '#FCE8E4',
+          100: '#F9C8C0',
+          200: '#F7B6AB',
+          300: '#F59E93',
+          400: '#F57F6B',
+          500: '#F4442E',   /* MAIN TERRACOTTA */
+          600: '#D93C28',
+          700: '#B33122',
+          800: '#8A261B',
+          900: '#631A14'
+        }
+      }
+    }
+  }
+}
+</script>
+
+
+    <style>
+        :root {
+            --terracotta: #F4442E;
+            --text-on-terracotta: #EDF5FC;
+            --text-on-white: #001514;
+        }
+        body {
+            color: var(--text-on-white);
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+
+<!-- MAIN CONTAINER -->
+<div class="max-w-6xl mx-auto py-10 px-4">
+
+    <!-- HEADER -->
+    <header class="no-print mb-10">
+        <h1 class="text-4xl font-extrabold tracking-tight" style="color: var(--terracotta);">
+            CBSE Class 10 Math Paper Generator
+        </h1>
+        <p class="mt-2 text-gray-600">Create mock tests, custom papers, and board-style exam sheets instantly.</p>
+    </header>
+
+    <!-- DASHBOARD CARD -->
+    <section id="dashboard" class="no-print bg-white/90 backdrop-blur-xl shadow-xl rounded-2xl border border-gray-200 p-8">
+
+        <!-- SOURCE PANEL -->
+        <div class="mb-8">
+            <h2 class="font-semibold text-lg mb-3" style="color: var(--terracotta);">1. Select Sources</h2>
+
+            <div class="flex flex-wrap gap-6 p-4 rounded-xl"
+                style="background:#FCE9E6; border:1px solid #F9C8C0;">
+
+                <label class="flex items-center cursor-pointer text-[var(--text-on-white)]">
+                    <input type="checkbox" class="src-cb w-5 h-5 mr-3" value="ncert" checked>
+                    <span class="font-medium">NCERT Textbook</span>
+                </label>
+
+                <label class="flex items-center cursor-pointer text-[var(--text-on-white)]">
+                    <input type="checkbox" class="src-cb w-5 h-5 mr-3" value="pyq" checked>
+                    <span class="font-medium">PYQ (Past Years)</span>
+                </label>
+
+                <label class="flex items-center cursor-pointer text-[var(--text-on-white)]">
+                    <input type="checkbox" class="src-cb w-5 h-5 mr-3" value="ssm" checked>
+                    <span class="font-medium">Support Material</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- TABS -->
+        <div class="flex border-b border-gray-300 mb-6 select-none">
+            <button id="tab-mock" onclick="setMode('mock')"
+                class="px-6 py-3 font-bold border-b-2"
+                style="color:var(--terracotta); border-color:var(--terracotta);">
+                Board Mock (80 Marks)
+            </button>
+
+            <button id="tab-custom" onclick="setMode('custom')"
+                class="px-6 py-3 font-semibold text-gray-500 hover:text-[var(--terracotta)] transition">
+                Custom Test
+            </button>
+        </div>
+
+        <!-- MOCK MODE PANEL -->
+        <div id="panel-mock" class="block">
+            <p class="text-gray-600 mb-4">Generates a complete CBSE Board Pattern paper covering the full syllabus.</p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 text-sm text-gray-600 mb-6">
+                <div>1 Mark: <strong>20 Q</strong></div>
+                <div>2 Marks: <strong>5 Q</strong></div>
+                <div>3 Marks: <strong>6 Q</strong></div>
+                <div>5 Marks: <strong>4 Q</strong></div>
+                <div>4 Marks Case: <strong>3 Q</strong></div>
+            </div>
+
+            <button onclick="handleGenerate()"
+                class="px-8 py-3 rounded-xl font-semibold shadow-lg transition"
+                style="background:var(--terracotta); color:var(--text-on-terracotta);">
+                Generate Full Paper
+            </button>
+        </div>
+
+        <!-- CUSTOM MODE PANEL -->
+        <div id="panel-custom" class="hidden">
+
+            <!-- Marks Config -->
+            <div class="bg-gray-50 border rounded-xl p-4 flex items-center gap-4 mb-6">
+                <label class="font-semibold">Total Marks:</label>
+                <input type="number" id="custom-marks" value="20" min="5" max="100"
+                    class="w-24 p-2 border rounded-lg text-center">
+                <span class="text-gray-500 text-sm">Questions will be selected until this limit is reached.</span>
+            </div>
+
+            <!-- Marks filter -->
+            <h3 class="text-sm font-semibold uppercase mb-2" style="color:#5c5c5c;">Question Types</h3>
+            <div class="flex flex-wrap gap-4 mb-6">
+                <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
+                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="1" checked>1 Mark
+                </label>
+
+                <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
+                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="2" checked>2 Marks
+                </label>
+
+                <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
+                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="3" checked>3 Marks
+                </label>
+
+                <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
+                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="4" checked>4 Marks
+                </label>
+
+                <label class="flex items-center bg-white border px-4 py-2 rounded-lg shadow-sm cursor-pointer">
+                    <input type="checkbox" class="mark-cb w-5 h-5 mr-2" value="5" checked>5 Marks
+                </label>
+            </div>
+
+            <!-- Chapter Selection -->
+            <h3 class="text-sm font-semibold uppercase" style="color:#5c5c5c;">Select Chapters</h3>
+
+            <div class="flex items-center gap-3 text-xs mb-2">
+                <button onclick="toggleChapters(true)" class="text-[var(--terracotta)] font-semibold hover:underline">Select All</button>
+                <span>|</span>
+                <button onclick="toggleChapters(false)" class="text-[var(--terracotta)] font-semibold hover:underline">Deselect All</button>
+            </div>
+
+            <div id="chapter-list"
+                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 border rounded-xl p-3 h-48 overflow-y-auto bg-white shadow-inner">
+            </div>
+
+            <button onclick="handleGenerate()"
+                class="w-full px-10 py-3 rounded-xl font-semibold shadow-lg mt-6 transition"
+                style="background:var(--terracotta); color:var(--text-on-terracotta);">
+                Generate Custom Test
+            </button>
+        </div>
+
+        <!-- HISTORY -->
+        <div class="mt-10 pt-8 border-t">
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="font-semibold">Generated History</h3>
+                <button onclick="clearHistory()" class="text-xs text-red-500 hover:underline">Clear History</button>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border rounded-xl shadow-sm text-sm">
+                    <thead>
+                        <tr class="bg-gray-100 text-left">
+                            <th class="p-2 border w-8"></th>
+                            <th class="p-2 border">Date</th>
+                            <th class="p-2 border">Type</th>
+                            <th class="p-2 border">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PAPER VIEW -->
+    <div id="paper-view"
+         class="hidden print-area max-w-[210mm] mx-auto bg-white p-12 shadow-2xl mt-10 min-h-screen rounded-xl text-[var(--text-on-white)]">
+
+        <!-- HEADER -->
+        <div class="text-center border-b-2 border-black pb-4 mb-6">
+            <input type="text" value="MOCK SCHOOL PRESENTS"
+                   class="text-3xl font-serif font-bold w-full text-center border-none bg-transparent" />
+
+            <input type="text" value="MOCK EXAMINATION"
+                   class="text-xl font-serif font-bold w-full text-center border-none bg-transparent" />
+
+            <div class="flex justify-between font-serif font-bold text-lg mt-6">
+                <span>Class: X</span>
+                <span>Subject: Mathematics</span>
+            </div>
+
+            <div class="flex justify-between font-serif text-lg mt-1">
+                <span id="paper-time">Time: 3 Hours</span>
+                <span id="paper-marks">Max Marks: 80</span>
+            </div>
+
+            <div id="paper-meta" class="no-print mt-2 text-xs text-gray-500 font-mono"></div>
+        </div>
+
+        <!-- INSTRUCTIONS -->
+        <div class="mb-6 font-serif text-sm italic border-b border-gray-300 pb-4">
+            <p><strong>General Instructions:</strong></p>
+            <ul class="list-disc ml-6">
+                <li>This question paper contains 5 sections A, B, C, D and E.</li>
+                <li>Section A has 20 MCQs carrying 1 mark each.</li>
+                <li>Section B has 5 questions of 02 marks each.</li>
+                <li>Section C has 6 questions of 03 marks each.</li>
+                <li>Section D has 4 questions of 05 marks each.</li>
+                <li>Section E has 3 case-based units of 04 marks each.</li>
+            </ul>
+        </div>
+
+        <div id="questions-container" class="font-serif text-justify"></div>
+
+        <div id="answer-key-container" class="hidden mt-12 pt-6 border-t-4 border-black break-before-page">
+            <h2 class="text-center text-xl font-bold underline mb-6">MARKING SCHEME / ANSWERS</h2>
+            <div id="answer-list"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FLOATING CONTROLS -->
+<div id="controls" class="no-print hidden fixed bottom-6 right-6 flex flex-col gap-3">
+    <button onclick="window.print()"
+        class="p-4 rounded-full shadow-xl hover:opacity-90 transition"
+        style="background:var(--terracotta); color:var(--text-on-terracotta);">
+        Print
+    </button>
+
+    <button onclick="toggleAnswers()"
+        class="p-4 rounded-full shadow-xl hover:opacity-90 transition"
+        style="background:#1E7B32; color:white;">
+        Answers
+    </button>
+
+    <button onclick="location.reload()"
+        class="p-4 rounded-full shadow-xl hover:opacity-90 transition"
+        style="background:#555; color:white;">
+        Dashboard
+    </button>
+</div>
+
+<!-- SCRIPTS -->
+<script src="config.js"></script>
+<script src="storage.js"></script>
+<script src="generator.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+/* -------------------------------------- */
+/* COLOR VARIABLES */
+/* -------------------------------------- */
+:root {
+    --terracotta: #F4442E;
+    --terracotta-light: #FCE8E4;
+    --terracotta-border: #F7B6AB;
+    --text-on-terracotta: #EDF5FC;
+    --text-dark: #001514;
+    --surface: #ffffff;
+    --surface-muted: #fafafa;
+    --border: #e5e7eb;
+}
+
+/* -------------------------------------- */
+/* GLOBAL */
+/* -------------------------------------- */
+
+body {
+    background: #f3f5f9;
+    color: var(--text-dark);
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+input, button, select {
+    outline: none;
+}
+
+/* -------------------------------------- */
+/* DASHBOARD / PANELS */
+/* -------------------------------------- */
+
+#dashboard {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 20px;
+    border: 1px solid var(--border);
+    max-width: 1100px;
+}
+
+#dashboard .container {
+    padding: 0;
+}
+
+/* Source section */
+#dashboard .p-4 {
+    border-radius: 14px;
+    background: var(--terracotta-light);
+    border: 1px solid var(--terracotta-border);
+}
+
+/* Checkbox label */
+label {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+/* -------------------------------------- */
+/* TABS */
+/* -------------------------------------- */
+
+button[id^="tab-"] {
+    transition: all 0.25s ease;
+    border-bottom-width: 2px;
+    border-color: transparent;
+}
+
+#tab-mock.active,
+#tab-custom.active {
+    color: var(--terracotta) !important;
+    border-color: var(--terracotta) !important;
+    background: var(--terracotta-light) !important;
+}
+
+#tab-mock:not(.active):hover,
+#tab-custom:not(.active):hover {
+    color: var(--terracotta);
+}
+
+/* -------------------------------------- */
+/* BUTTONS */
+/* -------------------------------------- */
+
+button {
+    transition: 0.25s ease;
+    border-radius: 10px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+button.primary {
+    background: var(--terracotta);
+    color: var(--text-on-terracotta);
+}
+
+button.primary:hover {
+    background: #d93c28;
+}
+
+/* -------------------------------------- */
+/* CUSTOM MODE PANEL */
+/* -------------------------------------- */
+
+#panel-custom {
+    background: var(--surface-muted);
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+#chapter-list {
+    border-radius: 10px;
+    background: var(--surface);
+}
+
+#chapter-list label {
+    background: #f9fafb;
+    border: 1px solid var(--border);
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+#chapter-list label:hover {
+    background: var(--terracotta-light);
+    border-color: var(--terracotta);
+}
+
+/* -------------------------------------- */
+/* HISTORY TABLE */
+/* -------------------------------------- */
+
+table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table th {
+    background: #f8fafc;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+table td {
+    background: var(--surface);
+    transition: 0.2s;
+}
+
+table tr:hover td {
+    background: #f3f4f6;
+}
+
+/* -------------------------------------- */
+/* PAPER VIEW */
+/* -------------------------------------- */
+
+#paper-view {
+    background: var(--surface);
+    padding: 40px 60px;
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    margin-top: 20px;
+}
+
+#paper-view input {
+    border: none;
+    background: transparent;
+    color: var(--text-dark);
+}
+
+/* Paper instructions */
+#paper-view ul li {
+    margin-bottom: 4px;
+}
+
+/* Questions container */
+#questions-container {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+#questions-container .question {
+    margin-bottom: 16px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+/* Answer Key */
+#answer-key-container {
+    margin-top: 40px;
+}
+
+/* -------------------------------------- */
+/* FLOATING CONTROLS */
+/* -------------------------------------- */
+
+#controls button {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    transition: 0.2s ease;
+}
+
+#controls button:hover {
+    transform: scale(1.06);
+}
+
+/* Hover-expand button text */
+#controls .group:hover span {
+    margin-left: 6px;
+    opacity: 1;
+}
+
+/* -------------------------------------- */
+/* SOURCE TAG */
+/* -------------------------------------- */
+
+.source-tag {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-style: italic;
+    padding-top: 2px;
+}
+
+/* -------------------------------------- */
+/* MOBILE RESPONSIVE FIXES */
+/* -------------------------------------- */
+
+@media (max-width: 640px) {
+
+    /* Dashboard & Outer Padding */
+    #dashboard {
+        padding: 16px !important;
+        margin-top: 12px !important;
+        border-radius: 12px;
+    }
+
+    /* Header Text */
+    header h1 {
+        font-size: 1.8rem !important;
+        line-height: 1.2 !important;
+    }
+
+    header p {
+        font-size: 0.9rem !important;
+    }
+
+    /* Tabs become stacked */
+    .flex.border-b {
+        flex-direction: column !important;
+        gap: 6px !important;
+        border-bottom: none !important;
+    }
+
+    button[id^="tab-"] {
+        width: 100% !important;
+        text-align: center !important;
+        border-bottom-width: 1px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    /* Paper View Adjustments */
+    #paper-view {
+        padding: 20px !important;
+        border-radius: 10px !important;
+    }
+
+    #paper-view input {
+        font-size: 1.1rem !important;
+    }
+
+    #questions-container {
+        font-size: 0.95rem !important;
+    }
+
+    /* Floating Controls Resize */
+    #controls {
+        bottom: 12px !important;
+        right: 12px !important;
+        gap: 10px !important;
+    }
+
+    #controls button {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    /* Chapter List Improvements */
+    #chapter-list {
+        grid-template-columns: repeat(2, 1fr) !important;
+        height: 200px !important;
+        padding: 8px !important;
+        gap: 8px !important;
+    }
+
+    #chapter-list label {
+        font-size: 0.85rem !important;
+        padding: 6px !important;
+    }
+
+    /* History Table Readability */
+    table th, table td {
+        font-size: 0.75rem !important;
+        padding: 6px !important;
+    }
+}
+
+
+
+/* -------------------------------------- */
+/* PRINT MODE */
+/* -------------------------------------- */
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    #paper-view {
+        display: block !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .break-before-page {
+        page-break-before: always;
+    }
+
+    .break-inside-avoid {
+        break-inside: avoid;
+    }
+}
+
